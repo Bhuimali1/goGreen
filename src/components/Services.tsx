@@ -73,7 +73,7 @@ function Services() {
                   className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#348F42] transition-colors duration-300 hover:text-[#092d20]"
                 >
                   Learn More
-                  <span className="inline-block translate-y-[1px] transition-transform duration-300 group-hover:translate-x-1">
+                  <span className="relative -top-[0.5px] transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </a>

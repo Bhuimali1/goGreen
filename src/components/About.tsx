@@ -86,7 +86,7 @@ function About() {
               className="mt-7 inline-flex items-center gap-1 rounded-full bg-[#348F42] px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#267535] hover:shadow-lg"
             >
               Learn More
-              <span className="inline-block translate-y-[1.5px]">→</span>
+              <span className="relative -top-[0.5px]">→</span>
             </a>
           </div>
 
