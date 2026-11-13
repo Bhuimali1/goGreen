@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Smooth transitions only for interactive elements & cards */
+  a,
+  button,
+  #services .grid > div,
+  section .overflow-hidden.grid > div {
+    transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease, color 0.28s ease !important;
+  }
+
+  /* Pill CTA buttons (Get Started, Explore More, Learn More, Contact Us) */
+  a.rounded-full:hover,
+  button:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 24px -6px rgba(9, 45, 32, 0.28) !important;
+  }
+
+  /* Nav & Footer links */
+  nav a:not(.rounded-full):hover,
+  footer a:not(.rounded-full):hover {
+    transform: translateY(-2px) !important;
+  }
+
+  /* Only Service cards lift on hover */
+  #services .grid > div:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 16px 30px -8px rgba(9, 45, 32, 0.14) !important;
+  }
+
+  /* Features 4-column bar items */
+  section .overflow-hidden.grid > div:hover {
+    background-color: #f0f7eb !important;
+  }
+
+  section .overflow-hidden.grid > div:hover svg {
+    transform: scale(1.15) !important;
+    transition: transform 0.28s ease !important;
+  }
+
+  /* Click press feedback */
+  a:active,
+  button:active {
+    transform: scale(0.96) !important;
+  }
+}
